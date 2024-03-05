@@ -17,6 +17,7 @@
   "author": "Owen Johnson",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^9.2.15"
+    "inquirer": "^8.2.4",
+    "inquirer-maxlength-input-prompt": "^1.0.2"
   }
 }
