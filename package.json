@@ -1,0 +1,22 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/owenphineas/logo-generator"
+  },
+  "author": "Owen Johnson",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.15"
+  }
+}
