@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const maxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
+const shapeClass = require('./lib/shapes');
 // import shapes from './lib/shapes';
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for text
@@ -43,4 +44,11 @@ inquirer
 ])
 .then(function(data) {
     console.log(data);
+    if(data.shapes === 'Circle') {
+        const shape = new shapeClass.Circle(data.letters, data.textcolor, data.shapecolor);
+    } else if(data.shapes === 'Triangle') {
+        const shape = new shapeClass.Triangle(data.letters, data.textcolor, data.shapecolor);
+    } else if(data.shapes === 'Square') {
+        const shape = new shapeClass.Square(data.letters, data.textcolor, data.shapecolor);
+    }
 });
